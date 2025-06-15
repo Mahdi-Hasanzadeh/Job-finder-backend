@@ -13,7 +13,10 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://job-finder-local.netlify.app",
+];
 
 app.use(
   cors({
