@@ -13,7 +13,7 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-const allowedOrigins = ["https://job-finder-frontend.onrender.com"];
+const allowedOrigins = ["http://localhost:3000"];
 
 app.use(
   cors({
